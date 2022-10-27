@@ -5,7 +5,7 @@ import styles from "./CurrentForecast.module.css";
 
 export function CurrentForecast({
   as: Component = Block,
-  currentTemp = <>63º</>,
+  currentTemp = 63,
   feelsLikeTemp = <>67º</>,
   humidity = <>51%</>,
   precipitation = <>.75"</>,
@@ -24,9 +24,9 @@ export function CurrentForecast({
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b97c_Temp.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b97c_Temp.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -46,9 +46,9 @@ export function CurrentForecast({
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b97c_Temp.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b97c_Temp.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -68,9 +68,9 @@ export function CurrentForecast({
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b977_humidity.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bc_humidity.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b977_humidity.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bc_humidity.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -90,9 +90,9 @@ export function CurrentForecast({
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b978_Precipitation.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bd_Precipitation.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b978_Precipitation.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bd_Precipitation.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -112,9 +112,9 @@ export function CurrentForecast({
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b97d_AQI.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c2_AQI.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b97d_AQI.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c2_AQI.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -134,9 +134,9 @@ export function CurrentForecast({
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b979_sunset.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663be_sunset.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/6359c92cf2be5b638644b943/6359c92cf2be5b638644b979_sunset.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663be_sunset.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"

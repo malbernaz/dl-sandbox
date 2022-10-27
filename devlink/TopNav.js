@@ -91,6 +91,27 @@ export function TopNav({ as: Component = Block }) {
               </Block>
             </Link>
             <Link
+              className={cx(styles, "dropdown-card", "middle")}
+              block="inline"
+              button={false}
+              link={{
+                mode: "external",
+                url: "#",
+              }}
+            >
+              <Block className={cx(styles, "wrapper")} tag="div">
+                <Block className={cx(styles, "label-highlight")} tag="div">
+                  {"Amsterdam - Severe storms"}
+                </Block>
+                <Block className={cx(styles, "label")} tag="div">
+                  {"8:17pm"}
+                </Block>
+              </Block>
+              <Block className={cx(styles, "temp-small")} tag="div">
+                {"80º"}
+              </Block>
+            </Link>
+            <Link
               className={cx(styles, "dropdown-card")}
               block="inline"
               button={false}
@@ -101,14 +122,8 @@ export function TopNav({ as: Component = Block }) {
             >
               <Block className={cx(styles, "wrapper")} tag="div">
                 <Block className={cx(styles, "label-highlight")} tag="div">
-                  {"Gothenburg - Sun"}
+                  {"Add location"}
                 </Block>
-                <Block className={cx(styles, "label")} tag="div">
-                  {"2:17pm"}
-                </Block>
-              </Block>
-              <Block className={cx(styles, "temp-small")} tag="div">
-                {"80º"}
               </Block>
             </Link>
           </DropdownList>

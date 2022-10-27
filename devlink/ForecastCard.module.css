@@ -16,9 +16,15 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transition-property: all;
-  transition-duration: 200ms;
+  transition-duration: 400ms;
   transition-timing-function: ease;
   cursor: auto;
+}
+
+.card-forecast:hover {
+  background-image: radial-gradient(circle farthest-corner at 50% 140%, #455295, hsla(231.42857142857144, 100.00%, 4.12%, 1.00) 61%);
+  box-shadow: 0 40px 70px -30px hsla(231.06382978723403, 19.03%, 48.43%, 1.00);
+  transform: translate(0px, -2px);
 }
 
 .forecast-day {
@@ -40,16 +46,19 @@
   min-height: 90px;
   justify-content: center;
   align-items: center;
-  background-image: radial-gradient(circle farthest-corner at 50% -190%, #455295 20%, hsla(234, 90.91%, 4.31%, 0.00) 90%);
+  background-image: url(https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663cd_Group%201291.png), radial-gradient(circle farthest-corner at 50% -190%, #455295 20%, hsla(234, 90.91%, 4.31%, 0.00) 90%);
+  background-position: 50% 50%, 0px 0px;
+  background-size: 70%, auto;
+  background-repeat: no-repeat, repeat;
   transform-style: preserve-3d;
   transform: translate3d(0px, 0px, 1px);
 }
 
 .image-large {
-  z-index: 1;
+  z-index: 110;
   width: 100px;
   transform-style: preserve-3d;
-  transform: translate3d(0px, 0px, 40px);
+  transform: translate3d(0px, 0px, 50px);
 }
 
 .forecast-info {
@@ -66,6 +75,7 @@
 }
 
 .temp {
+  z-index: 60;
   background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 1.00), hsla(0, 0.00%, 100.00%, 0.40));
   transform-style: preserve-3d;
   transform: translate3d(0px, 0px, 300px);
@@ -77,11 +87,6 @@
   letter-spacing: -1px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.temp:hover {
-  transform-style: preserve-3d;
-  transform: scale3d(1.06, 1.06, 1.01);
 }
 
 .flex {
