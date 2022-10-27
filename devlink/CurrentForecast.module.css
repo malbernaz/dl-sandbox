@@ -1,0 +1,83 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.title {
+  position: relative;
+  max-width: 170px;
+  margin-right: 24px;
+  background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 1.00) 13%, hsla(0, 0.00%, 100.00%, 0.20));
+  transition-property: transform, color;
+  transition-duration: 300ms, 300ms;
+  transition-timing-function: ease, ease;
+  color: hsla(231.06382978723403, 0.00%, 100.00%, 1.00);
+  font-size: 19px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.grid-03 {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+@media screen and (max-width: 767px) {
+  .grid-03 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  border-top-style: solid;
+  border-top-width: 0.5px;
+  border-top-color: #646b93;
+  border-right-style: solid;
+  border-right-width: 0.5px;
+  border-right-color: #646b93;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  border-bottom-color: #646b93;
+  border-left-style: solid;
+  border-left-width: 0.5px;
+  border-left-color: #646b93;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition-property: box-shadow, transform;
+  transition-duration: 400ms, 400ms;
+  transition-timing-function: cubic-bezier(.165, .84, .44, 1), cubic-bezier(.165, .84, .44, 1);
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: hsla(234, 0.00%, 0.00%, 0.10);
+  background-image: none /* radial-gradient(circle farthest-corner at 50% -260%, #455295 19%, black 74%) */;
+  box-shadow: 0 20px 60px -20px #b2b8d8;
+  transform: translate(0px, -2px) scale(1.01);
+}
+
+.flex {
+  display: flex;
+  padding-top: 8px;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-left: 14px;
+  justify-content: space-between;
+  align-items: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  color: hsla(231.06382978723403, 19.03%, 48.43%, 1.00);
+  text-decoration: none;
+}
+
+.label-highlight {
+  color: hsla(230.52631578947367, 32.76%, 77.25%, 1.00);
+}
