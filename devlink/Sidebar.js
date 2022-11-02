@@ -32,9 +32,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
           <Image
             className={cx(styles, "icon")}
             img={{
-              src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bf_Logo.svg",
+              src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc663_Logo.svg",
             }}
-            src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bf_Logo.svg"
+            src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc663_Logo.svg"
             loading="lazy"
             width="auto"
             height="auto"
@@ -56,9 +56,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
           <Block className={cx(styles, "sidebar-logo-icon-wrapper")} tag="div">
             <Image
               img={{
-                src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663a9_sidebar-icon-dashboardly-webflow-template.svg",
+                src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc64f_sidebar-icon-dashboardly-webflow-template.svg",
               }}
-              src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663a9_sidebar-icon-dashboardly-webflow-template.svg"
+              src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc64f_sidebar-icon-dashboardly-webflow-template.svg"
               loading="eager"
               width="auto"
               height="auto"
@@ -88,9 +88,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
                   <Image
                     className={cx(styles, "icon")}
                     img={{
-                      src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b6_home-icon.svg",
+                      src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65a_home-icon.svg",
                     }}
-                    src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b6_home-icon.svg"
+                    src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65a_home-icon.svg"
                     loading="lazy"
                     width="auto"
                     height="auto"
@@ -109,9 +109,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
                   <Image
                     className={cx(styles, "icon")}
                     img={{
-                      src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b5_Like-icon.svg",
+                      src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc659_Like-icon.svg",
                     }}
-                    src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b5_Like-icon.svg"
+                    src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc659_Like-icon.svg"
                     loading="lazy"
                     width="auto"
                     height="auto"
@@ -130,9 +130,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
                   <Image
                     className={cx(styles, "icon")}
                     img={{
-                      src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663ba_reporting-icon.svg",
+                      src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65e_reporting-icon.svg",
                     }}
-                    src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663ba_reporting-icon.svg"
+                    src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65e_reporting-icon.svg"
                     loading="lazy"
                     width="auto"
                     height="auto"
@@ -151,9 +151,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
                   <Image
                     className={cx(styles, "icon")}
                     img={{
-                      src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b9_map-icon.svg",
+                      src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65d_map-icon.svg",
                     }}
-                    src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b9_map-icon.svg"
+                    src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65d_map-icon.svg"
                     loading="lazy"
                     width="auto"
                     height="auto"
@@ -172,9 +172,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
                   <Image
                     className={cx(styles, "icon")}
                     img={{
-                      src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b8_Calendar-icon.svg",
+                      src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65c_Calendar-icon.svg",
                     }}
-                    src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b8_Calendar-icon.svg"
+                    src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65c_Calendar-icon.svg"
                     loading="lazy"
                     width="auto"
                     height="auto"
@@ -193,9 +193,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
                   <Image
                     className={cx(styles, "icon")}
                     img={{
-                      src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b7_settings-icon.svg",
+                      src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65b_settings-icon.svg",
                     }}
-                    src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663b7_settings-icon.svg"
+                    src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65b_settings-icon.svg"
                     loading="lazy"
                     width="auto"
                     height="auto"
@@ -214,9 +214,9 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
               <Image
                 className={cx(styles, "arrow")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bb_arrow.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65f_arrow.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bb_arrow.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc65f_arrow.svg"
                 loading="lazy"
                 width={10}
                 height="auto"

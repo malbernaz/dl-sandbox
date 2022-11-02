@@ -51,3 +51,6 @@ export const useInteractions = (ixData, styles, ...nodes) => {
     if (initEngine) initEngine(ixData, styles, ...nodes);
   }, [initEngine, ixData, nodes, styles]);
 };
+
+export const useHomePageInteractions = () =>
+  usePageInteractions("6362a8b8e1a1d011667bc672");

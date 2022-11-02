@@ -5,7 +5,7 @@ import styles from "./CurrentForecast.module.css";
 
 export function CurrentForecast({
   as: Component = Block,
-  currentTemp = 63,
+  currentTemp = <>63º</>,
   feelsLikeTemp = <>67º</>,
   humidity = <>51%</>,
   precipitation = <>.75"</>,
@@ -20,13 +20,13 @@ export function CurrentForecast({
       <Block className={cx(styles, "grid-03")} tag="div">
         <Block className={cx(styles, "card")} tag="div">
           <Block className={cx(styles, "flex")} tag="div">
-            <Block className={cx(styles, "flex")} tag="div">
+            <Block className={cx(styles, "current-content")} tag="div">
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc665_Temp.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc665_Temp.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -42,13 +42,13 @@ export function CurrentForecast({
         </Block>
         <Block className={cx(styles, "card")} tag="div">
           <Block className={cx(styles, "flex")} tag="div">
-            <Block className={cx(styles, "flex")} tag="div">
+            <Block className={cx(styles, "current-content")} tag="div">
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc665_Temp.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c1_Temp.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc665_Temp.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -64,13 +64,13 @@ export function CurrentForecast({
         </Block>
         <Block className={cx(styles, "card")} tag="div">
           <Block className={cx(styles, "flex")} tag="div">
-            <Block className={cx(styles, "flex")} tag="div">
+            <Block className={cx(styles, "current-content")} tag="div">
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bc_humidity.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc660_humidity.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bc_humidity.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc660_humidity.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -86,13 +86,13 @@ export function CurrentForecast({
         </Block>
         <Block className={cx(styles, "card")} tag="div">
           <Block className={cx(styles, "flex")} tag="div">
-            <Block className={cx(styles, "flex")} tag="div">
+            <Block className={cx(styles, "current-content")} tag="div">
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bd_Precipitation.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc661_Precipitation.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663bd_Precipitation.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc661_Precipitation.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -108,13 +108,13 @@ export function CurrentForecast({
         </Block>
         <Block className={cx(styles, "card")} tag="div">
           <Block className={cx(styles, "flex")} tag="div">
-            <Block className={cx(styles, "flex")} tag="div">
+            <Block className={cx(styles, "current-content")} tag="div">
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c2_AQI.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc666_AQI.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663c2_AQI.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc666_AQI.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"
@@ -130,13 +130,13 @@ export function CurrentForecast({
         </Block>
         <Block className={cx(styles, "card")} tag="div">
           <Block className={cx(styles, "flex")} tag="div">
-            <Block className={cx(styles, "flex")} tag="div">
+            <Block className={cx(styles, "current-content")} tag="div">
               <Image
                 className={cx(styles, "icon")}
                 img={{
-                  src: "https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663be_sunset.svg",
+                  src: "https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc662_sunset.svg",
                 }}
-                src="https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663be_sunset.svg"
+                src="https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc662_sunset.svg"
                 loading="lazy"
                 width="auto"
                 height="auto"

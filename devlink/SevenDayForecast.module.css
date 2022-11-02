@@ -26,7 +26,6 @@
   grid-row-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  perspective: 2000px;
 }
 
 @media screen and (max-width: 767px) {

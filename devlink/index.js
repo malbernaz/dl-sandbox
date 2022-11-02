@@ -9,3 +9,4 @@ export * from "./SevenDayForecast";
 export * from "./ForecastCard";
 export * from "./CurrentForecast";
 export * from "./Layout";
+export * from "./SavedLocations";

@@ -61,13 +61,13 @@
 
 .title-large {
   position: relative;
-  margin-right: 24px;
+  margin-right: 10px;
   background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 1.00) 13%, hsla(0, 0.00%, 100.00%, 0.20));
   transition-property: transform, color;
   transition-duration: 300ms, 300ms;
   transition-timing-function: ease, ease;
   color: hsla(231.06382978723403, 0.00%, 100.00%, 1.00);
-  font-size: 26px;
+  font-size: 22px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
@@ -111,8 +111,8 @@
   text-decoration: none;
 }
 
-.label-highlight {
-  color: hsla(230.52631578947367, 32.76%, 77.25%, 1.00);
+.dropdown-card:hover {
+  color: hsla(231.06382978723403, 51.73%, 84.81%, 1.00);
 }
 
 .temp-small {

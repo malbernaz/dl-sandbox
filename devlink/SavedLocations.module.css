@@ -19,19 +19,11 @@
   background-clip: text;
 }
 
-.grid-03 {
-  display: grid;
-  grid-auto-columns: 1fr;
+.list {
+  display: flex;
+  flex-direction: column;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-}
-
-@media screen and (max-width: 767px) {
-  .grid-03 {
-    grid-template-columns: 1fr;
-  }
 }
 
 .card {
@@ -81,15 +73,24 @@
   text-decoration: none;
 }
 
-.current-content {
-  display: flex;
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 0px;
-  justify-content: space-between;
-  align-items: center;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  text-decoration: none;
+.image-small {
+  width: 50px;
+  object-fit: contain;
+}
+
+.temp-small {
+  background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 1.00), hsla(0, 0.00%, 100.00%, 0.40));
+  transition-property: transform, color;
+  transition-duration: 300ms, 300ms;
+  transition-timing-function: ease, ease;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.temp-small:hover {
+  transform-style: preserve-3d;
+  transform: scale3d(1.06, 1.06, 1.01);
 }

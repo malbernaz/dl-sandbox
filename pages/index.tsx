@@ -5,7 +5,7 @@ import {
   usePageInteractions,
 } from "../devlink";
 
-const data = {
+const liveData = {
   weekForecast: [
     {
       day: "Monday",
@@ -67,23 +67,25 @@ const data = {
   },
 };
 
+const TEMP = "F";
+
 export default function Home() {
   return (
     <>
       <SevenDayForecast cards={
-        data.weekForecast.map(f => (
+        liveData.weekForecast.map(f => (
           <ForecastCard 
             dayOfWeek={f.day} temp={f.temp} high={f.hi} low={f.low} 
           />
         ))
       } />
       <CurrentForecast 
-        currentTemp={data.currentForecast.currentTemp + "º"}
-        feelsLikeTemp={data.currentForecast.feelsLikeTemp}
-        humidity={data.currentForecast.humidity}
-        precipitation={data.currentForecast.precipitation}
-        aqi={data.currentForecast.aqi}
-        sunset={data.currentForecast.sunset}
+        currentTemp={liveData.currentForecast.currentTemp + "º"}
+        feelsLikeTemp={liveData.currentForecast.feelsLikeTemp + TEMP}
+        humidity={liveData.currentForecast.humidity}
+        precipitation={liveData.currentForecast.precipitation}
+        aqi={liveData.currentForecast.aqi}
+        sunset={liveData.currentForecast.sunset}
       />
     </>
   );

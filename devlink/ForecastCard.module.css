@@ -15,9 +15,11 @@
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  transform: perspective(2000px);
   transition-property: all;
-  transition-duration: 400ms;
+  transition-duration: 100ms;
   transition-timing-function: ease;
+  color: #727ec5;
   cursor: auto;
 }
 
@@ -46,7 +48,7 @@
   min-height: 90px;
   justify-content: center;
   align-items: center;
-  background-image: url(https://d1otoma47x30pg.cloudfront.net/635ab486b2de12c30f76638f/635ab486b2de12c30f7663cd_Group%201291.png), radial-gradient(circle farthest-corner at 50% -190%, #455295 20%, hsla(234, 90.91%, 4.31%, 0.00) 90%);
+  background-image: url(https://d1otoma47x30pg.cloudfront.net/6362a8b8e1a1d011667bc671/6362a8b8e1a1d011667bc66f_Group%201291.png), radial-gradient(circle farthest-corner at 50% -190%, #455295 20%, hsla(234, 90.91%, 4.31%, 0.00) 90%);
   background-position: 50% 50%, 0px 0px;
   background-size: 70%, auto;
   background-repeat: no-repeat, repeat;
@@ -56,49 +58,46 @@
 
 .image-large {
   z-index: 110;
-  width: 100px;
-  transform-style: preserve-3d;
-  transform: translate3d(0px, 0px, 50px);
+  width: 90px;
 }
 
 .forecast-info {
   display: flex;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  padding-left: 10px;
+  padding-right: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-column-gap: 8px;
   grid-row-gap: 8px;
+  transform-style: preserve-3d;
+  transform: none /* translate3d(0px, 0px, 50px) */;
   text-align: center;
 }
 
 .temp {
   z-index: 60;
   background-image: linear-gradient(to bottom, hsla(0, 0.00%, 100.00%, 1.00), hsla(0, 0.00%, 100.00%, 0.40));
-  transform-style: preserve-3d;
-  transform: translate3d(0px, 0px, 300px);
   transition-property: transform, color;
   transition-duration: 300ms, 300ms;
   transition-timing-function: ease, ease;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 400;
   letter-spacing: -1px;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.flex {
+.flex-horizontal {
   display: flex;
-  padding-top: 8px;
+  padding-top: 5px;
   padding-right: 14px;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
   padding-left: 14px;
   justify-content: space-between;
   align-items: center;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  color: hsla(231.06382978723403, 19.03%, 48.43%, 1.00);
   text-decoration: none;
 }

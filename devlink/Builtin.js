@@ -42,14 +42,6 @@ export function DOM({ tag, attributes = {}, children, ...props }) {
   );
 }
 
-export function LineBreak() {
-  return React.createElement("br");
-}
-
-export function Break() {
-  return React.createElement("br");
-}
-
 export function Strong(props) {
   return React.createElement("strong", props);
 }
