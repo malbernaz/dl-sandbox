@@ -10,7 +10,7 @@ import {
 import { cx } from "./utils";
 import styles from "./TopNav.module.css";
 
-export function TopNav({ as: Component = Block }) {
+export function TopNav({ as: Component = Block, text = <></> }) {
   return (
     <Component className={cx(styles, "top-nav-container")} tag="div">
       <Block className={cx(styles, "dashboard-nav-container")} tag="div">

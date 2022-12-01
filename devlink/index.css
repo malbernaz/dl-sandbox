@@ -2187,6 +2187,3 @@ textarea.w-select {
 .wf-layout-layout {
   display: grid !important;
 }
-.wf-layout-cell {
-  display: flex !important;
-}

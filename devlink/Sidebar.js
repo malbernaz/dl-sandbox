@@ -8,10 +8,27 @@ import {
   Link,
   NavbarButton,
 } from "./Builtin";
+import { useInteractions } from "./interactions";
 import { cx } from "./utils";
 import styles from "./Sidebar.module.css";
 
+const InteractionsData = JSON.parse(
+  '{"events":{"e-111":{"id":"e-111","name":"","animationType":"custom","eventTypeId":"MOUSE_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-26","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-112"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"509000b4-6fad-0d5c-76f2-7145a6a4cddc","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"509000b4-6fad-0d5c-76f2-7145a6a4cddc","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1667413909447},"e-112":{"id":"e-112","name":"","animationType":"custom","eventTypeId":"MOUSE_SECOND_CLICK","action":{"id":"","actionTypeId":"GENERAL_START_ACTION","config":{"delay":0,"easing":"","duration":0,"actionListId":"a-32","affectedElements":{},"playInReverse":false,"autoStopEventId":"e-111"}},"mediaQueries":["main","medium","small","tiny"],"target":{"id":"509000b4-6fad-0d5c-76f2-7145a6a4cddc","appliesTo":"ELEMENT","styleBlockIds":[]},"targets":[{"id":"509000b4-6fad-0d5c-76f2-7145a6a4cddc","appliesTo":"ELEMENT","styleBlockIds":[]}],"config":{"loop":false,"playInReverse":false,"scrollOffsetValue":null,"scrollOffsetUnit":null,"delay":null,"direction":null,"effectIn":null},"createdOn":1667413909447}},"actionLists":{"a-26":{"id":"a-26","title":"Sidebar Collapse","actionItemGroups":[{"actionItems":[{"id":"a-26-n-2","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{},"value":"none"}},{"id":"a-26-n-4","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".logo-wrapper","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d65882"]},"value":"none"}},{"id":"a-26-n-6","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":0,"target":{},"value":0,"unit":""}},{"id":"a-26-n-9","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".sidebar-menu-collapsed-overlay","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d6588e"]},"value":"block"}}]},{"actionItems":[{"id":"a-26-n-10","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"ease","duration":200,"target":{"useEventTarget":"PARENT","selector":".sidebar-wrapper","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d65896"]},"widthValue":46,"widthUnit":"px","heightUnit":"PX","locked":false}}]}],"useFirstGroupAsInitialState":false,"createdOn":1650904639417},"a-32":{"id":"a-32","title":"Sidebar Expand","actionItemGroups":[{"actionItems":[{"id":"a-32-n-2","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{},"value":"block"}},{"id":"a-32-n-4","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".logo-wrapper","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d65882"]},"value":"block"}},{"id":"a-32-n-5","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"useEventTarget":"SIBLINGS","selector":".collapse-icon-container","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d658b6"]},"value":"block"}},{"id":"a-32-n-6","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".sidebar-logo-icon-wrapper","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d65889"]},"value":"none"}},{"id":"a-32-n-7","actionTypeId":"GENERAL_DISPLAY","config":{"delay":0,"easing":"","duration":0,"target":{"selector":".sidebar-menu-collapsed-overlay","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d6588e"]},"value":"none"}}]},{"actionItems":[{"id":"a-32-n-8","actionTypeId":"STYLE_SIZE","config":{"delay":0,"easing":"ease","duration":200,"target":{"useEventTarget":"PARENT","selector":".sidebar-wrapper","selectorGuids":["e3e61be3-31f3-c611-da22-0aa230d65896"]},"widthValue":300,"widthUnit":"px","heightUnit":"PX","locked":false}},{"id":"a-32-n-10","actionTypeId":"STYLE_OPACITY","config":{"delay":0,"easing":"ease","duration":300,"target":{},"value":1,"unit":""}}]}],"useFirstGroupAsInitialState":false,"createdOn":1650904639417}},"site":{"mediaQueries":[{"key":"main","min":992,"max":10000},{"key":"medium","min":768,"max":991},{"key":"small","min":480,"max":767},{"key":"tiny","min":0,"max":479}]}}'
+);
+
 export function Sidebar({ as: Component = NavbarWrapper }) {
+  useInteractions(
+    InteractionsData,
+    styles,
+    "509000b4-6fad-0d5c-76f2-7145a6a4cddc",
+    "6362a8b8e1a1d011667bc672|e1de801e-655c-c09f-d0f5-101a2126658f",
+    "96b42907-275d-2a0d-c129-32ec18893f4a",
+    "96b42907-275d-2a0d-c129-32ec18893f6b",
+    "96b42907-275d-2a0d-c129-32ec18893f46",
+    "96b42907-275d-2a0d-c129-32ec18893f6c",
+    "96b42907-275d-2a0d-c129-32ec18893f4e"
+  );
+
   return (
     <Component
       className={cx(styles, "sidebar-wrapper")}
@@ -210,7 +227,11 @@ export function Sidebar({ as: Component = NavbarWrapper }) {
             />
           </NavbarMenu>
           <Block className={cx(styles, "collapse-icon-container")} tag="div">
-            <Block className={cx(styles, "collapse-icon-wrapper")} tag="div">
+            <Block
+              data-w-id="509000b4-6fad-0d5c-76f2-7145a6a4cddc"
+              className={cx(styles, "collapse-icon-wrapper")}
+              tag="div"
+            >
               <Image
                 className={cx(styles, "arrow")}
                 img={{

@@ -1,7 +1,12 @@
 import React from "react";
 import { Block, Image } from "./Builtin";
+import { useInteractions } from "./interactions";
 import { cx } from "./utils";
 import styles from "./CurrentForecast.module.css";
+
+const InteractionsData = JSON.parse(
+  '{"events":{},"actionLists":{},"site":{"mediaQueries":[{"key":"main","min":992,"max":10000},{"key":"medium","min":768,"max":991},{"key":"small","min":480,"max":767},{"key":"tiny","min":0,"max":479}]}}'
+);
 
 export function CurrentForecast({
   as: Component = Block,
@@ -12,8 +17,18 @@ export function CurrentForecast({
   aqi = <>70</>,
   sunset = <>6:50pm</>,
 }) {
+  useInteractions(
+    InteractionsData,
+    styles,
+    "6b29cadb-85e1-c6aa-61dc-296170e735c9"
+  );
+
   return (
-    <Component className={cx(styles, "block")} tag="div">
+    <Component
+      data-w-id="6b29cadb-85e1-c6aa-61dc-296170e735c9"
+      className={cx(styles, "block")}
+      tag="div"
+    >
       <Block className={cx(styles, "title")} tag="div">
         {"Current"}
       </Block>

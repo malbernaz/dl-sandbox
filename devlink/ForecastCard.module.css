@@ -16,9 +16,6 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   transform: perspective(2000px);
-  transition-property: all;
-  transition-duration: 100ms;
-  transition-timing-function: ease;
   color: #727ec5;
   cursor: auto;
 }
@@ -53,12 +50,14 @@
   background-size: 70%, auto;
   background-repeat: no-repeat, repeat;
   transform-style: preserve-3d;
-  transform: translate3d(0px, 0px, 1px);
+  transform: none /* translate3d(0px, 0px, 50px) */;
 }
 
 .image-large {
   z-index: 110;
   width: 90px;
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 0px, 60px);
 }
 
 .forecast-info {
@@ -74,6 +73,11 @@
   transform-style: preserve-3d;
   transform: none /* translate3d(0px, 0px, 50px) */;
   text-align: center;
+}
+
+.temp-wrapper {
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 0px, 40px);
 }
 
 .temp {

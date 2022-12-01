@@ -54,3 +54,6 @@ export const useInteractions = (ixData, styles, ...nodes) => {
 
 export const useHomePageInteractions = () =>
   usePageInteractions("6362a8b8e1a1d011667bc672");
+
+export const useDashboardPageInteractions = () =>
+  usePageInteractions("6362b6e0e1a1d011667bc80f");

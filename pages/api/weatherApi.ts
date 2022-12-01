@@ -9,7 +9,7 @@ export default function handler(
       weekForecast: [
         {
           day: "Monday",
-          condition: "Partially cloudy",
+          condition: "Partly cloudy",
           temp: 63,
           hi: 71,
           low: 59,
@@ -58,12 +58,12 @@ export default function handler(
         },
       ],
       currentForecast: {
-        currentTemp: "65º",
-        feelsLikeTemp: "57º",
-        humidity:"90%",
-        precipitation: "0%",
-        aqi: 27,
-        sunset: "7:20pm"
+        currentTemp: "60",
+        feelsLikeTemp: "59º",
+        humidity:"94%",
+        precipitation: "3%",
+        aqi: 32,
+        sunset: "6:09pm"
       },
     };
   return LIVE_DATA;

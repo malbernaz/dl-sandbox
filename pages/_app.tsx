@@ -1,19 +1,22 @@
-// @ts-nocheck
+
 import "../devlink/index.css";
 import "../devlink/global.css";
 
 import type { AppProps } from "next/app";
 import WeatherApi from "./api/weatherApi";
 
-import { InteractionsProvider, Layout, SideNav, TopNav } from "../devlink";
-
 import {
-  CurrentForecast,
-  ForecastCard,
+  InteractionsProvider,
+  Layout,
+  SideNav,
+  TopNav,
   SevenDayForecast,
+  ForecastCard,
+  CurrentForecast
 } from "../devlink";
 
 const TEMP = "F";
+const DEGREE = "º";
 const WEATHER = {
   RAIN: 'https://d1otoma47x30pg.cloudfront.net/636050012be0dc1150547ce3/636050012be0dc1150547d17_Group%201263.png',
   THUBNDER: 'https://d1otoma47x30pg.cloudfront.net/636050012be0dc1150547ce3/636050012be0dc1150547d1a_Group%201273.png',
@@ -23,6 +26,7 @@ const WEATHER = {
 
 export default function App({ Component, pageProps }: AppProps) {
   var latestWeather = WeatherApi("San Francisco, CA");
+
   return (
     <InteractionsProvider>
       <Layout
@@ -43,14 +47,14 @@ export default function App({ Component, pageProps }: AppProps) {
             ))
             } />
             <CurrentForecast
-              currentTemp={latestWeather.currentForecast.currentTemp + "º"}
+              currentTemp={latestWeather.currentForecast.currentTemp + DEGREE}
               feelsLikeTemp={latestWeather.currentForecast.feelsLikeTemp + TEMP}
               humidity={latestWeather.currentForecast.humidity}
               precipitation={latestWeather.currentForecast.precipitation}
               aqi={latestWeather.currentForecast.aqi}
               sunset={latestWeather.currentForecast.sunset}
             />
-          </>
+        </>
         }
       />
     </InteractionsProvider>
